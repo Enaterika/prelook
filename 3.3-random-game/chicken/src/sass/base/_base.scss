@@ -93,3 +93,8 @@
     }
   }
   
+  .js-loading *,
+  .js-loading *:before,
+  .js-loading *:after {
+    animation-play-state: paused !important;
+  }
