@@ -1,0 +1,20 @@
+{
+  "name": "enaterika-jsfepreschool-1",
+  "version": "1.0.0",
+  "description": "Private repository for @enaterika",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch ./chicken/src/sass/style.scss ./chicken/src/sass/dist/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/enaterika-JSFEPRESCHOOL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/enaterika-JSFEPRESCHOOL/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/enaterika-JSFEPRESCHOOL#readme"
+}

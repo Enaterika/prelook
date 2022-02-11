@@ -1,0 +1,10 @@
+%transition {
+    transition: all .3s ease-out;
+}
+
+%transition-filter {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  cursor: pointer;
+  @extend %transition;
+}

@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_constants.scss"],"sourcesContent":["$color-brand: #bdae82;\n$color-black: #000000;\n$color-text: #ffffff;\n\n$content-width: 1440px;\n$tablet-width:768px+68;\n$mobile-big-width: 414px+158;\n$mobile-small-width: 320px;"],"file":"_constants.css"}

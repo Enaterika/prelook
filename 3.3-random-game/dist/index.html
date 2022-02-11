@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./chicken/src/sass/dist/style.css">
+    <link rel="icon" href="./chicken/assets/svg/favicon.ico"/>
+    <title>chicken</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container" id="header">
+            <a href="" class="logo"></a>
+            <a href="" class="h1"><h1>CRAZY CHICKEN</h1></a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="mobile"><p>please open the game in fullscreen mode on computer</p></div>
+        <div class="container" >
+           <audio src="./chicken/assets/audio/run.mp3" autoplay="autoplay"></audio>
+           <div class = "game">
+            <div class = "gameover">
+                <div class="results">
+                    <div class='score'>0</div>
+                    <div class="previous-score"></div>
+                    <h2>GAME OVER</h2>
+                    <a href="" class="restart"><p>restart</p></a>
+                    <div class="kfc"></div>
+                    <div class="family"></div>
+                </div>
+            </div>
+            <div class="game-zone">
+               <div id="chicken"></div>
+               <div class="enemy" id="farmer"></div>
+               <div class="background">
+                   <div class="cloud"></div>
+                   <div class="grass"></div>
+                   <div class="sheep"></div>
+                   <div class="agaric"></div>
+                   <div class="mosquito"></div>
+                   <div class="trololo"></div>
+                   <!-- <div class="mole"></div> -->
+               </div>
+            </div>
+           </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container" id="footer">
+            <div class="footer-data">
+                <span>©</span>
+                <time datetime="2021">2022</time>
+            </div>   
+            <a href="https://github.com/Enaterika" class="github"><img src="./chicken/assets/svg/github.svg" alt="github" class="github"></a>
+            <a href="https://rs.school/js/" class="rss"> <img src="./chicken/assets/svg/rss.svg" alt="rss school" class="rss"></a>
+        </div>
+    </footer>
+    <script  type="module" src="./chicken/src/index.js"></script>
+</body>
+</html>
