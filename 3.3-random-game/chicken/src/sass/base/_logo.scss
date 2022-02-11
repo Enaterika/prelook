@@ -1,0 +1,27 @@
+.logo {
+    display: block;
+    background-image: url("../../../assets/svg/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    // position: relative;
+    // z-index: 5;
+    &:hover{
+      @extend %transition-filter;
+    }
+    @media(max-width:$mobile-big-width+30) {
+      width: 27px;
+    height: 27px;
+    }
+    @media(max-width:$mobile-small-width+20) {
+      margin-left: 30px;
+      width: 80px;
+    height: 80px;
+    }
+  }
+
+  

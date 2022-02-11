@@ -1,0 +1,215 @@
+.game{
+  max-width: 1440px;
+  height:600px;
+  background-color: rgb(141, 182, 218);
+  border-bottom: 5px solid rgb(27, 148, 8);
+  margin: auto;
+  @media(max-width:1430px) {
+display: none;
+         }
+
+}
+
+.game-zone{
+  max-width: 1440px;
+  height:600px;
+  background-color: rgb(141, 182, 218);
+  border-bottom: 5px solid rgb(27, 148, 8);
+  margin: auto;
+  overflow: hidden;
+}
+.night{
+  background-color: rgb(9, 55, 96);
+}
+
+.drug{
+  width: 1440px;
+  height:600px;
+  background-image: url(../../../assets/gif/drugs.gif);
+  background-size: 1440px 600px;
+  opacity:0.8;
+  background-repeat: no-repeat;
+}
+
+
+#chicken {
+  height:200px;
+  background-image: url(../../../assets/svg/chicken.png24);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position:relative;
+  top:410px;
+  left:20px;
+  z-index: 10;
+  // @media(max-width:$mobile-big-width+50) {
+  //   width: 50px;
+  // height:50px;
+  // background-size: 50px 50px;
+  // }
+}
+
+.hidden{
+opacity:0;
+}
+
+#farmer{
+// width:200px;
+position:relative;
+height:200px;
+left:1350px;
+background-size: contain;
+background-repeat: no-repeat;
+top:205px;
+z-index: 9;
+}
+
+
+.enemy{
+background-image: url(../../../assets/svg/farmer.png24);
+animation: farmerMov 2s infinite linear;
+@keyframes farmerMov {
+  0% {
+    left:1350px;
+
+  }
+  100% {
+    left:-150px;
+  }
+}
+}
+
+.macho{
+  background-image: url(../../../assets/svg/macho.png);
+  animation: machoMov 1s infinite linear;
+  @keyframes machoMov {
+    0% {
+      left:1350px;
+  
+    }
+    100% {
+      left:-150px;
+    }
+  }
+
+}
+
+
+
+// #macho{
+//   height:200px;
+//   background-image: url(../../../assets/svg/macho.png);
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   position: relative;
+//   top:5px;
+//   left:1300px;
+//   animation: machoMov 4s infinite linear;
+//   z-index: 10;
+//   // @media(max-width:$mobile-big-width+50) {
+//   //   width: 40px;
+//   // height:70px;
+//   // background-size: 40px 70px;
+//   // }
+//   }
+//   @keyframes machoMov {
+//     0% {
+//       left:1300px;
+  
+//     }
+//     100% {
+//       left:-60px;
+//     }
+//   }
+
+
+
+.jump {
+  animation: jump 0.4s linear;
+}
+
+@keyframes jump {
+  0% {
+    top:400px;
+  }
+  30%{
+    top:150px;
+  }
+  50%{
+    top: 50px;
+  }
+  80%{
+    top:150px;
+  }
+  100% {
+    top:400px;
+  }
+}
+
+
+.gameover {
+  display:none;
+  // display: flex;
+  position: absolute;
+  height: 600px;
+  width:1440px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  z-index: 900;
+  justify-content: center;
+  align-items: center;
+  
+}
+.over{
+  display: flex;
+  
+}
+.results {
+  display: flex;
+  position: absolute;
+  height: 500px;
+  width:600px;
+  background-color: rgb(221, 164, 9);
+  z-index: 901;
+  opacity: 1;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+.restart p{
+  position: absolute;
+  font-size: 3.8rem;
+  color: green;
+  font-weight: bold;
+  padding-top: 330px;
+  padding-left: 80px;
+}
+
+.score{
+  position: absolute;
+  font-size: 2.9rem;
+  font-weight: bold;
+  color: rgb(11, 28, 85);
+  padding-left: 100px;
+  padding-top: 110px;
+}
+
+.previous-score{
+  font-size: 1.5rem;
+  position: absolute;
+  color:rgb(27, 5, 61);
+  padding-top: 155px;
+  padding-left: 110px;
+}
+
+.mobile {
+  display: none;
+  @media(max-width:1430px) {
+    display: flex;
+    justify-content: center;
+    color: rgb(221, 164, 9);
+    padding: 10px;
+             }
+
+}

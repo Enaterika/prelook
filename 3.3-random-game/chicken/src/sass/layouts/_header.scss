@@ -1,0 +1,76 @@
+.header {
+    padding: 0;
+  }
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    color: $color-text;
+    @media(max-width:$mobile-big-width+50) {
+      padding: 0 10px;
+    }
+  }
+  
+  .language {
+    @media (max-width: 767px) {
+      margin-left: auto;
+    }
+  }
+  .language-list {
+    display:none;
+    // display: flex;
+    list-style: none;
+    font-weight: 700;
+    gap: 8px;
+    padding-left:35px;
+    @media (max-width: 768px+48) {
+      padding-left: 20px;
+      gap:7px;
+    }
+    @media (max-width: 767px) {
+      // padding-left: 30px;
+      // gap:7px;
+      // padding-right: 30px;
+    }
+  }
+  
+  .language-link:hover {
+    cursor: pointer;
+    // color: $color-text;
+    transition: 0.3s;
+    @extend %transition-filter;
+  }
+  
+ .language-link__selected {
+    color: $color-brand;
+  }
+
+  .language-link__noselected {
+    color: $color-text;
+  }
+
+  .theme {
+    background-image: url("../../../assets/svg/sun.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    margin-left: 30px;
+    &:hover{
+      @extend %transition-filter;
+    }
+    @media (max-width: 768px+48) {
+      margin-left: 30px;
+    }
+    @media(max-width:$mobile-big-width+30) {
+      margin-left: 0px;
+    }
+  }
+  
+  .theme.change {
+    background-image: url("../../../assets/svg/moon.svg");
+  }

@@ -1,0 +1,41 @@
+
+  .footer {
+    color: $color-text;
+  }
+  
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    padding: 5px 20px;
+    font-size: 1.8rem;
+  }
+
+  .github{
+    height: 36px;
+    padding-left: 20px;
+  }
+  
+  .footer-data {
+    display: flex;
+    gap: 20px;
+  }
+  
+  
+  .rss {
+    padding-left: 20px;
+    height: 27px;
+    // @media (max-width:$tablet-width) {
+    //   padding-left: 0px;
+    // }
+  }
+
+  #footer a:hover {
+  @extend %transition-filter;
+}
+
+#footer a:hover,
+.social-list li:hover {
+  @extend %transition-filter;
+}
